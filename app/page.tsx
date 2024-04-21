@@ -27,10 +27,9 @@ export default async function PricingPage() {
     .order('unit_amount', { referencedTable: 'prices' });
 
   return (
-    <Pricing
+    <><h1> My SAAS APP</h1><Pricing
       user={user}
       products={products ?? []}
-      subscription={subscription}
-    />
+      subscription={subscription} /></>
   );
 }
